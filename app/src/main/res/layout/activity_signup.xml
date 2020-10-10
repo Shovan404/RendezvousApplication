@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorbackground"
+    android:theme="@style/AppTheme"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="Create Your Account"
+        android:textColor="@color/colorlogo"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="160dp"
+            android:layout_height="148dp"
+            android:background="@color/colorbackground"
+            android:src="@drawable/ic_photo_black_24dp" />
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Upload Profile Picture"
+            android:textColor="@color/textcolor"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etName"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Phone Number"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorlogo">
+
+        <EditText
+            android:id="@+id/etNewPassword"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorlogo">
+
+        <EditText
+            android:id="@+id/etRepassword"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Re-enter Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy."
+        android:textColor="@color/textcolor"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnSignup"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="@color/textcolor"
+        android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

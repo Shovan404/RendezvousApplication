@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorbackground"
+    tools:context=".fragment.UserFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:gravity="center"
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgProfiledisplay"
+                    android:layout_width="160dp"
+                    android:layout_height="148dp"
+                    android:background="@color/colorbackground"
+                    android:src="@drawable/ic_photo_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="serif"
+                    android:text="Email"
+                    android:textColor="@color/colorlogo"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvmyEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="serif"
+                    android:text="My email"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="serif"
+                    android:text="Name"
+                    android:textColor="@color/colorlogo"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvmyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="serif"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:text="My name"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnToChangePassword"
+                    android:layout_width="144dp"
+                    android:layout_height="31dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_button"
+                    android:text="Change Password"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="serif"
+                    android:text="Phone number"
+                    android:textColor="@color/colorlogo"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvmyPhonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="serif"
+                    android:text="My phone Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="serif"
+                    android:text="My Location"
+                    android:textColor="@color/colorlogo"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnAddLocation"
+                    android:layout_width="24dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/round_button"
+                    android:text="+"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/locationRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_margin="5dp" />
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/btnChangeInfo"
+            android:layout_width="131dp"
+            android:layout_margin="2dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/textcolor" />
+
+
+    </LinearLayout>
+
+</ScrollView>
