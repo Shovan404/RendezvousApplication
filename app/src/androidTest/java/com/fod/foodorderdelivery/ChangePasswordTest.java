@@ -25,9 +25,9 @@ public class ChangePasswordTest {
 
     @Test
     public void testChangePassword() {
-        onView(withId(R.id.etOldPassword)).perform(typeText("ajar123456"), closeSoftKeyboard());
-        onView(withId(R.id.etChangePassword)).perform(typeText("ajar12346"), closeSoftKeyboard());
-        onView(withId(R.id.etReChangePassword)).perform(typeText("ajar12346"), closeSoftKeyboard());
+        onView(withId(R.id.etOldPassword)).perform(typeText("shovan123456789"), closeSoftKeyboard());
+        onView(withId(R.id.etChangePassword)).perform(typeText("shovan1234"), closeSoftKeyboard());
+        onView(withId(R.id.etReChangePassword)).perform(typeText("shovan1234"), closeSoftKeyboard());
         onView(withId(R.id.btnChangePassword)).perform(click());
         onView(withId(R.id.btnChangePassword)).check(matches(isDisplayed()));
 

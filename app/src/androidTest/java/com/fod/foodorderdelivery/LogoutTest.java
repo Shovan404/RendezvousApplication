@@ -36,8 +36,8 @@ public class LogoutTest {
     @Test
     public void testLogout() {
         onView(withId(R.id.imgUserProfile)).perform(click());
-        onView(withId(R.id.etEmail)).perform(typeText("ajar@gmail.com"), closeSoftKeyboard());
-        onView(withId(R.id.etPassword)).perform(typeText("ajar123456"), closeSoftKeyboard());
+        onView(withId(R.id.etEmail)).perform(typeText("shovan@gmail.com"), closeSoftKeyboard());
+        onView(withId(R.id.etPassword)).perform(typeText("shovan1234"), closeSoftKeyboard());
         onView(withId(R.id.btnLogin)).perform(click());
         onView(withId(R.id.imgUserProfile)).perform(click());
         onView(withText("Logout")).check(matches(isDisplayed()));

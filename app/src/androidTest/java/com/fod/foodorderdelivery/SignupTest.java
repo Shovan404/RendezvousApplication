@@ -25,8 +25,8 @@ public class SignupTest {
     @Test
     public void testSignup() {
         onView(withId(R.id.etEmail)).perform(typeText("newaccount@gmail.com"), closeSoftKeyboard());
-        onView(withId(R.id.etName)).perform(typeText("ajar123456"), closeSoftKeyboard());
-        onView(withId(R.id.etPhoneNumber)).perform(typeText("11112345"), closeSoftKeyboard());
+        onView(withId(R.id.etName)).perform(typeText("shovanrajjoshi"), closeSoftKeyboard());
+        onView(withId(R.id.etPhoneNumber)).perform(typeText("1111sss5"), closeSoftKeyboard());
         onView(withId(R.id.etNewPassword)).perform(typeText("password123"), closeSoftKeyboard());
         onView(withId(R.id.etRepassword)).perform(typeText("password123"), closeSoftKeyboard());
         onView(withId(R.id.btnSignup)).perform(click());

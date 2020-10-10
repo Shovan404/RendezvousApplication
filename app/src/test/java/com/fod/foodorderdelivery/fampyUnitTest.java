@@ -70,7 +70,7 @@ public class fampyUnitTest {
     @Test
     public void testLogin() {
         FampyAPI fampyAPI = URL.getInstance().create(FampyAPI.class);
-        Call<UserResponse> usersCall = fampyAPI.checkUser("ajar@gmail.com", "ajar12345");
+        Call<UserResponse> usersCall = fampyAPI.checkUser("shovan@gmail.com", "shovan1234");
         try {
             Response<UserResponse> response = usersCall.execute();
             String token = response.body().getToken();
@@ -84,13 +84,13 @@ public class fampyUnitTest {
 
     @Test
     public void testLoginFail() {
-        boolean result = users.userAuthentication("ajar@gmail.com", "wrongpassword");
+        boolean result = users.userAuthentication("shovan@gmail.com", "wrongpassword");
         assertEquals(false, result);
     }
 
     @Test
     public void checkPassword() {
-        boolean result = users.checkPassword("ajar12345");
+        boolean result = users.checkPassword("shovan1234");
         assertEquals(true, result);
     }
 
@@ -102,19 +102,19 @@ public class fampyUnitTest {
 
     @Test
     public void testPasswordChange() {
-        boolean result = users.changePassword("ajar123456");
+        boolean result = users.changePassword("shocan123456");
         assertEquals(true, result);
     }
 
     @Test
     public void testPhoneNumber() {
-        boolean result = users.isValidPhone("1112345");
+        boolean result = users.isValidPhone("11234234");
         assertEquals(true, result);
     }
 
     @Test
     public void testPhoneNumberFail() {
-        boolean result = users.isValidPhone("100000000000000");
+        boolean result = users.isValidPhone("1000000000000000");
         assertEquals(false, result);
     }
 

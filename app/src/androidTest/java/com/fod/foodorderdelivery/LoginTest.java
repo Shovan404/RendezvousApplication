@@ -26,8 +26,8 @@ public class LoginTest {
 
     @Test
     public void testLogin() {
-        onView(withId(R.id.etEmail)).perform(typeText("ajar@gmail.com"), closeSoftKeyboard());
-        onView(withId(R.id.etPassword)).perform(typeText("ajar123456"), closeSoftKeyboard());
+        onView(withId(R.id.etEmail)).perform(typeText("shovan@gmail.com"), closeSoftKeyboard());
+        onView(withId(R.id.etPassword)).perform(typeText("shovan1234"), closeSoftKeyboard());
         onView(withId(R.id.btnLogin)).perform(click());
         onView(withId(R.id.bottom_navigation)).check(matches(isDisplayed()));
     }
